@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DD86C0658DCED7F0E52BFC2 /* Pods_BeeSafeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05410C7A26714AD9E371A518 /* Pods_BeeSafeTests.framework */; };
+		CD25C9D1BA36AB5406EA975E /* Pods_BeeSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A668549279EF7319FA3957BC /* Pods_BeeSafe.framework */; };
+		EBA1354021F2190D004FB0CF /* BeeSafeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1353F21F2190D004FB0CF /* BeeSafeStore.swift */; };
+		EBA1354221F2198B004FB0CF /* BeeSafeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1354121F2198B004FB0CF /* BeeSafeState.swift */; };
+		EBA1354521F21EA8004FB0CF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1354421F21EA8004FB0CF /* CameraViewController.swift */; };
+		EBA1354821F2D140004FB0CF /* UIView+shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1354721F2D140004FB0CF /* UIView+shadows.swift */; };
+		EBA1354A21F2E75B004FB0CF /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1354921F2E75B004FB0CF /* MapViewModel.swift */; };
+		EBA1354C21F2F252004FB0CF /* CameraViewControllerWithML.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1354B21F2F252004FB0CF /* CameraViewControllerWithML.swift */; };
+		EBA1355621F2FBA1004FB0CF /* GMSMutablePath+rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1355521F2FBA1004FB0CF /* GMSMutablePath+rectangle.swift */; };
+		EBA1355B21F32131004FB0CF /* PhotoSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1355A21F32131004FB0CF /* PhotoSendViewController.swift */; };
+		EBA1356021F35C3F004FB0CF /* MarkersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1355F21F35C3F004FB0CF /* MarkersService.swift */; };
+		EBA1356421F44B4D004FB0CF /* hazard.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EBA1356321F44B4D004FB0CF /* hazard.mlmodel */; };
+		EBB7799421F1591100722CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7799321F1591100722CAE /* AppDelegate.swift */; };
+		EBB7799921F1591100722CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB7799721F1591100722CAE /* Main.storyboard */; };
+		EBB7799C21F1591100722CAE /* BeeSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBB7799A21F1591100722CAE /* BeeSafe.xcdatamodeld */; };
+		EBB7799E21F1591300722CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB7799D21F1591300722CAE /* Assets.xcassets */; };
+		EBB779A121F1591300722CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB7799F21F1591300722CAE /* LaunchScreen.storyboard */; };
+		EBB779AC21F1591300722CAE /* BeeSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB779AB21F1591300722CAE /* BeeSafeTests.swift */; };
+		EBD2DA6021F15DB40000624D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2DA5F21F15DB40000624D /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBB779A821F1591300722CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB7798821F1591100722CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB7798F21F1591100722CAE;
+			remoteInfo = BeeSafe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05410C7A26714AD9E371A518 /* Pods_BeeSafeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeeSafeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		056F400AD9BE730B706B89D1 /* Pods-BeeSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeeSafe/Pods-BeeSafe.release.xcconfig"; sourceTree = "<group>"; };
+		5A9152F50AF3720D40CDC1BC /* Pods-BeeSafeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeSafeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeeSafeTests/Pods-BeeSafeTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C42300B6C7845A29333190A /* Pods-BeeSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeSafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeeSafe/Pods-BeeSafe.debug.xcconfig"; sourceTree = "<group>"; };
+		94EB54FB80C5B43F9E8D8DEC /* Pods-BeeSafeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeSafeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeeSafeTests/Pods-BeeSafeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A668549279EF7319FA3957BC /* Pods_BeeSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeeSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA1353F21F2190D004FB0CF /* BeeSafeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeSafeStore.swift; sourceTree = "<group>"; };
+		EBA1354121F2198B004FB0CF /* BeeSafeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeSafeState.swift; sourceTree = "<group>"; };
+		EBA1354421F21EA8004FB0CF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EBA1354721F2D140004FB0CF /* UIView+shadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shadows.swift"; sourceTree = "<group>"; };
+		EBA1354921F2E75B004FB0CF /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		EBA1354B21F2F252004FB0CF /* CameraViewControllerWithML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerWithML.swift; sourceTree = "<group>"; };
+		EBA1355521F2FBA1004FB0CF /* GMSMutablePath+rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GMSMutablePath+rectangle.swift"; sourceTree = "<group>"; };
+		EBA1355A21F32131004FB0CF /* PhotoSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSendViewController.swift; sourceTree = "<group>"; };
+		EBA1355F21F35C3F004FB0CF /* MarkersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersService.swift; sourceTree = "<group>"; };
+		EBA1356321F44B4D004FB0CF /* hazard.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hazard.mlmodel; sourceTree = "<group>"; };
+		EBB7799021F1591100722CAE /* BeeSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB7799321F1591100722CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBB7799821F1591100722CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBB7799B21F1591100722CAE /* BeeSafe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeeSafe.xcdatamodel; sourceTree = "<group>"; };
+		EBB7799D21F1591300722CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBB779A021F1591300722CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBB779A221F1591300722CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB779A721F1591300722CAE /* BeeSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB779AB21F1591300722CAE /* BeeSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeSafeTests.swift; sourceTree = "<group>"; };
+		EBB779AD21F1591300722CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD2DA5F21F15DB40000624D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBB7798D21F1591100722CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD25C9D1BA36AB5406EA975E /* Pods_BeeSafe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB779A421F1591300722CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD86C0658DCED7F0E52BFC2 /* Pods_BeeSafeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F42BFE13D201201F1B739EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A668549279EF7319FA3957BC /* Pods_BeeSafe.framework */,
+				05410C7A26714AD9E371A518 /* Pods_BeeSafeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABB436BE01497161FCE241C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C42300B6C7845A29333190A /* Pods-BeeSafe.debug.xcconfig */,
+				056F400AD9BE730B706B89D1 /* Pods-BeeSafe.release.xcconfig */,
+				94EB54FB80C5B43F9E8D8DEC /* Pods-BeeSafeTests.debug.xcconfig */,
+				5A9152F50AF3720D40CDC1BC /* Pods-BeeSafeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBA1353E21F218B6004FB0CF /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1353F21F2190D004FB0CF /* BeeSafeStore.swift */,
+				EBA1354121F2198B004FB0CF /* BeeSafeState.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		EBA1354321F21DF6004FB0CF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1354421F21EA8004FB0CF /* CameraViewController.swift */,
+				EBA1354B21F2F252004FB0CF /* CameraViewControllerWithML.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		EBA1354621F2D12B004FB0CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1354721F2D140004FB0CF /* UIView+shadows.swift */,
+				EBA1355521F2FBA1004FB0CF /* GMSMutablePath+rectangle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EBA1355921F3211B004FB0CF /* PhotoSend */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1355A21F32131004FB0CF /* PhotoSendViewController.swift */,
+			);
+			path = PhotoSend;
+			sourceTree = "<group>";
+		};
+		EBA1355E21F35C27004FB0CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1355F21F35C3F004FB0CF /* MarkersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EBB7798721F1591100722CAE = {
+			isa = PBXGroup;
+			children = (
+				EBB7799221F1591100722CAE /* BeeSafe */,
+				EBB779AA21F1591300722CAE /* BeeSafeTests */,
+				EBB7799121F1591100722CAE /* Products */,
+				ABB436BE01497161FCE241C0 /* Pods */,
+				9F42BFE13D201201F1B739EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBB7799121F1591100722CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7799021F1591100722CAE /* BeeSafe.app */,
+				EBB779A721F1591300722CAE /* BeeSafeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB7799221F1591100722CAE /* BeeSafe */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1355E21F35C27004FB0CF /* Services */,
+				EBA1354621F2D12B004FB0CF /* Extensions */,
+				EBA1353E21F218B6004FB0CF /* Redux */,
+				EBD2DA6121F15DBD0000624D /* Features */,
+				EBB7799321F1591100722CAE /* AppDelegate.swift */,
+				EBA1356321F44B4D004FB0CF /* hazard.mlmodel */,
+				EBB7799721F1591100722CAE /* Main.storyboard */,
+				EBB7799D21F1591300722CAE /* Assets.xcassets */,
+				EBB7799F21F1591300722CAE /* LaunchScreen.storyboard */,
+				EBB779A221F1591300722CAE /* Info.plist */,
+				EBB7799A21F1591100722CAE /* BeeSafe.xcdatamodeld */,
+			);
+			path = BeeSafe;
+			sourceTree = "<group>";
+		};
+		EBB779AA21F1591300722CAE /* BeeSafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB779AB21F1591300722CAE /* BeeSafeTests.swift */,
+				EBB779AD21F1591300722CAE /* Info.plist */,
+			);
+			path = BeeSafeTests;
+			sourceTree = "<group>";
+		};
+		EBD2DA6121F15DBD0000624D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EBA1355921F3211B004FB0CF /* PhotoSend */,
+				EBA1354321F21DF6004FB0CF /* Camera */,
+				EBD2DA6221F15DD10000624D /* Map */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EBD2DA6221F15DD10000624D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EBD2DA5F21F15DB40000624D /* MapViewController.swift */,
+				EBA1354921F2E75B004FB0CF /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBB7798F21F1591100722CAE /* BeeSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB779B021F1591300722CAE /* Build configuration list for PBXNativeTarget "BeeSafe" */;
+			buildPhases = (
+				11B77408F84968B25E3B7529 /* [CP] Check Pods Manifest.lock */,
+				EBB7798C21F1591100722CAE /* Sources */,
+				EBB7798D21F1591100722CAE /* Frameworks */,
+				EBB7798E21F1591100722CAE /* Resources */,
+				E606284B519534BE3141369D /* [CP] Embed Pods Frameworks */,
+				97BB99D57D2BC962D8B71CC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeeSafe;
+			productName = BeeSafe;
+			productReference = EBB7799021F1591100722CAE /* BeeSafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBB779A621F1591300722CAE /* BeeSafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB779B321F1591300722CAE /* Build configuration list for PBXNativeTarget "BeeSafeTests" */;
+			buildPhases = (
+				BB73473E67252A7DA2162090 /* [CP] Check Pods Manifest.lock */,
+				EBB779A321F1591300722CAE /* Sources */,
+				EBB779A421F1591300722CAE /* Frameworks */,
+				EBB779A521F1591300722CAE /* Resources */,
+				D6B0471ADE4F2625F20F7860 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB779A921F1591300722CAE /* PBXTargetDependency */,
+			);
+			name = BeeSafeTests;
+			productName = BeeSafeTests;
+			productReference = EBB779A721F1591300722CAE /* BeeSafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBB7798821F1591100722CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hakathon;
+				TargetAttributes = {
+					EBB7798F21F1591100722CAE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EBB779A621F1591300722CAE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EBB7798F21F1591100722CAE;
+					};
+				};
+			};
+			buildConfigurationList = EBB7798B21F1591100722CAE /* Build configuration list for PBXProject "BeeSafe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBB7798721F1591100722CAE;
+			productRefGroup = EBB7799121F1591100722CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBB7798F21F1591100722CAE /* BeeSafe */,
+				EBB779A621F1591300722CAE /* BeeSafeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBB7798E21F1591100722CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB779A121F1591300722CAE /* LaunchScreen.storyboard in Resources */,
+				EBB7799E21F1591300722CAE /* Assets.xcassets in Resources */,
+				EBB7799921F1591100722CAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB779A521F1591300722CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11B77408F84968B25E3B7529 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeeSafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97BB99D57D2BC962D8B71CC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeeSafe/Pods-BeeSafe-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeSafe/Pods-BeeSafe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB73473E67252A7DA2162090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeeSafeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6B0471ADE4F2625F20F7860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeeSafeTests/Pods-BeeSafeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeSafeTests/Pods-BeeSafeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E606284B519534BE3141369D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeeSafe/Pods-BeeSafe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeSafe/Pods-BeeSafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBB7798C21F1591100722CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA1356421F44B4D004FB0CF /* hazard.mlmodel in Sources */,
+				EBB7799C21F1591100722CAE /* BeeSafe.xcdatamodeld in Sources */,
+				EBA1354221F2198B004FB0CF /* BeeSafeState.swift in Sources */,
+				EBA1354821F2D140004FB0CF /* UIView+shadows.swift in Sources */,
+				EBA1356021F35C3F004FB0CF /* MarkersService.swift in Sources */,
+				EBA1354021F2190D004FB0CF /* BeeSafeStore.swift in Sources */,
+				EBA1354C21F2F252004FB0CF /* CameraViewControllerWithML.swift in Sources */,
+				EBD2DA6021F15DB40000624D /* MapViewController.swift in Sources */,
+				EBA1355621F2FBA1004FB0CF /* GMSMutablePath+rectangle.swift in Sources */,
+				EBA1355B21F32131004FB0CF /* PhotoSendViewController.swift in Sources */,
+				EBB7799421F1591100722CAE /* AppDelegate.swift in Sources */,
+				EBA1354521F21EA8004FB0CF /* CameraViewController.swift in Sources */,
+				EBA1354A21F2E75B004FB0CF /* MapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB779A321F1591300722CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB779AC21F1591300722CAE /* BeeSafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBB779A921F1591300722CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB7798F21F1591100722CAE /* BeeSafe */;
+			targetProxy = EBB779A821F1591300722CAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBB7799721F1591100722CAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBB7799821F1591100722CAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBB7799F21F1591300722CAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBB779A021F1591300722CAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBB779AE21F1591300722CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBB779AF21F1591300722CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBB779B121F1591300722CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C42300B6C7845A29333190A /* Pods-BeeSafe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = BeeSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakathon.BeeSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBB779B221F1591300722CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056F400AD9BE730B706B89D1 /* Pods-BeeSafe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = BeeSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakathon.BeeSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBB779B421F1591300722CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EB54FB80C5B43F9E8D8DEC /* Pods-BeeSafeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = BeeSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakathon.BeeSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeSafe.app/BeeSafe";
+			};
+			name = Debug;
+		};
+		EBB779B521F1591300722CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9152F50AF3720D40CDC1BC /* Pods-BeeSafeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = BeeSafeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakathon.BeeSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeSafe.app/BeeSafe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBB7798B21F1591100722CAE /* Build configuration list for PBXProject "BeeSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB779AE21F1591300722CAE /* Debug */,
+				EBB779AF21F1591300722CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB779B021F1591300722CAE /* Build configuration list for PBXNativeTarget "BeeSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB779B121F1591300722CAE /* Debug */,
+				EBB779B221F1591300722CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB779B321F1591300722CAE /* Build configuration list for PBXNativeTarget "BeeSafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB779B421F1591300722CAE /* Debug */,
+				EBB779B521F1591300722CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBB7799A21F1591100722CAE /* BeeSafe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBB7799B21F1591100722CAE /* BeeSafe.xcdatamodel */,
+			);
+			currentVersion = EBB7799B21F1591100722CAE /* BeeSafe.xcdatamodel */;
+			path = BeeSafe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBB7798821F1591100722CAE /* Project object */;
+}

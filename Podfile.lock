@@ -1,0 +1,77 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Differentiator (3.0.2)
+  - Fusuma (1.2.4)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - Kingfisher (4.8.1)
+  - ReachabilitySwift (4.1.0)
+  - ReSwift (4.0.1)
+  - RxBlocking (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - RxTest (4.2.0):
+    - RxSwift (~> 4.0)
+  - SnapKit (4.0.0)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Fusuma
+  - GoogleMaps
+  - Kingfisher
+  - ReachabilitySwift
+  - ReSwift
+  - RxBlocking (~> 4.0)
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxSwift (~> 4.0)
+  - RxTest (~> 4.0)
+  - SnapKit
+  - Toast-Swift (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Differentiator
+    - Fusuma
+    - GoogleMaps
+    - Kingfisher
+    - ReachabilitySwift
+    - ReSwift
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - RxTest
+    - SnapKit
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Fusuma: e85c394878a2e1549c67140ba7c038aff8d7581c
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: 173979d57627663d7f4da78ffd45d83ee4f28186
+
+COCOAPODS: 1.5.3
