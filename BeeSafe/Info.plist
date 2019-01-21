@@ -32,7 +32,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>To display proper position on map</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>To obtain photo od workout spot</string>
+	<string>To obtain photo of a danger</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
